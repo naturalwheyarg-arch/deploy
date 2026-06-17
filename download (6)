@@ -1,0 +1,36 @@
+import Header from "@/components/Header";
+import Hero from "@/components/Hero";
+import VideoSection from "@/components/VideoSection";
+import Testimonials from "@/components/Testimonials";
+import PricingSection from "@/components/PricingSection";
+import FinalCTA from "@/components/FinalCTA";
+
+/**
+ * Nuvik Landing Page - Ultra Premium & Minimalista
+ * 
+ * Estructura:
+ * 1. Header sticky con logo y CTA
+ * 2. Hero section con foto de fundadores
+ * 3. Video section con embed de YouTube
+ * 4. Testimonios reales de clientes
+ * 5. Pricing section con 3 ofertas
+ * 6. CTA final
+ * 
+ * Diseño: Blanco puro, negro profundo, mucho espacio en blanco,
+ * tipografía Playfair Display + Inter, animaciones sutiles
+ */
+
+export default function Home() {
+  return (
+    <div className="min-h-screen bg-background text-foreground">
+      <Header />
+      <main>
+        <Hero />
+        <VideoSection />
+        <Testimonials />
+        <PricingSection />
+        <FinalCTA />
+      </main>
+    </div>
+  );
+}
